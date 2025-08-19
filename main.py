@@ -13,6 +13,7 @@ app = FastAPI(
     title="Conthabil Test API",
     description="API for storing and retrieving gazette URLs.",
     version="1.0.0",
+    root_path="/api"
 )
 
 
