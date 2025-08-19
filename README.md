@@ -163,10 +163,10 @@ A API estará acessivel localmente em `http://localhost:8000` (ou na porta `APP_
     'http://localhost:8000/api/gazettes/?month=7&year=2025' \
     -H 'accept: application/json'
   ```
-- `GET /api/gazettes/?month=7&year=2025&skip=0&limit=15`: Filtrando e paginando os resultados.
+- `GET /api/gazettes/?month=7&skip=0&limit=15`: Paginando os resultados.
   ```bash
   curl -X 'GET' \
-    'http://localhost:8000/api/gazettes/?month=7&year=2025&skip=0&limit=15' \
+    'http://localhost:8000/api/gazettes/?skip=0&limit=15' \
     -H 'accept: application/json'
   ```
 - `POST /api/gazettes/`: Cria uma nova entrada de diário oficial (usado internamente pelo `main_runner`).
