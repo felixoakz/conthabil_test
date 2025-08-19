@@ -18,7 +18,7 @@ Neste endereço, é possível acessar a implementação integralmente:
 - A documentação com interface gráfica Swagger em: **https://foakz.ddns.net/api/docs**
 - O endpoint para listar todas as inserções: **https://foakz.ddns.net/api/gazettes/**
 - Filtrando as inserções por competência (ex: mês 7, ano 2025): **https://foakz.ddns.net/api/gazettes/?month=7&year=2025**
-- Filtrando e paginando as inserções (ex: mês 7, ano 2025, skip 0, limit 10): **https://foakz.ddns.net/api/gazettes/?month=7&year=2025&skip=0&limit=10**
+- Paginando 10 inserções: **https://foakz.ddns.net/api/gazettes/?skip=0&limit=10**
 
 
 ## Funcionalidades Principais
