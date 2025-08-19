@@ -11,8 +11,6 @@ A aplicação foi containerizada usando Docker e orquestrada com Docker Compose,
 
 ## Deploy da Aplicação
 
-Hospedei a aplicação no seguinte endereço: **https://foakz.ddns.net/api**
-
 Neste endereço, é possível acessar a implementação integralmente:
 
 - A documentação com interface gráfica Swagger em: **https://foakz.ddns.net/api/docs**
