@@ -1,0 +1,27 @@
+[project]
+name = "conthabil"
+version = "0.1.0"
+description = "conthabil scraper Job testing task"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.116.1",
+    "httpx>=0.28.1",
+    "psycopg[binary]>=3.2.9",
+    "pydantic>=2.11.7",
+    "pydantic-settings",
+    "selenium>=4.35.0",
+    "sqlalchemy>=2.0.43",
+    "uvicorn>=0.35.0",
+    "python-dateutil>=2.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:Support for class-based `config` is deprecated, use ConfigDict instead.:DeprecationWarning",
+]
