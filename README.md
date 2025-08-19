@@ -11,9 +11,14 @@ A aplicação foi containerizada usando Docker e orquestrada com Docker Compose,
 
 ## Deploy da Aplicação
 
-Hospedei a aplicação no seguinte endereço: **[URL_DA_APLICACAO_AQUI]**
+Hospedei a aplicação no seguinte endereço: **https://foakz.ddns.net/api**
 
-Neste endereço, é possível acessar o endpoint de listar e filtrar inserções por competência, assim como a documentação e interface gráfica Swagger com mais dados sobre a aplicação em **[URL_DA_DOCUMENTACAO_SWAGGER_AQUI]**.
+Neste endereço, é possível acessar a implementação integralmente:
+
+- A documentação com interface gráfica Swagger em: **https://foakz.ddns.net/api/docs**
+- O endpoint para listar todas as inserções: **https://foakz.ddns.net/api/gazettes/**
+- Filtrando as inserções por competência (ex: mês 7, ano 2025): **https://foakz.ddns.net/api/gazettes/?month=7&year=2025**
+- Filtrando e paginando as inserções (ex: mês 7, ano 2025, skip 0, limit 10): **https://foakz.ddns.net/api/gazettes/?month=7&year=2025&skip=0&limit=10**
 
 
 ## Funcionalidades Principais
@@ -149,8 +154,26 @@ A API estará acessivel localmente em `http://localhost:8000` (ou na porta `APP_
 #### Endpoints
 
 - `GET /api/gazettes/`: Lista todos os diários oficiais armazenados.
-- `GET /api/gazettes/?month=8&year=2025`: filtra os diários oficiais por mês e ano ao passar parametros extras para o mesmo endpoint.
+  ```bash
+  curl -X 'GET' \
+    'http://localhost:8000/api/gazettes/' \
+    -H 'accept: application/json'
+  ```
+- `GET /api/gazettes/?month=7&year=2025`: Filtra os diários oficiais por mês e ano.
+  ```bash
+  curl -X 'GET' \
+    'http://localhost:8000/api/gazettes/?month=7&year=2025' \
+    -H 'accept: application/json'
+  ```
+- `GET /api/gazettes/?month=7&year=2025&skip=0&limit=15`: Filtrando e paginando os resultados.
+  ```bash
+  curl -X 'GET' \
+    'http://localhost:8000/api/gazettes/?month=7&year=2025&skip=0&limit=15' \
+    -H 'accept: application/json'
+  ```
 - `POST /api/gazettes/`: Cria uma nova entrada de diário oficial (usado internamente pelo `main_runner`).
+
+
 
 
 ## Testes
