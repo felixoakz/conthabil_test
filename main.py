@@ -70,4 +70,4 @@ def read_gazettes(
     return crud.get_gazettes(db, skip=skip, limit=limit)
 
 
-app.include_router(router, prefix="/api")
+app.include_router(router)
