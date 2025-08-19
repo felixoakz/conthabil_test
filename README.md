@@ -6,7 +6,7 @@ O projeto é uma aplicação Python que automatiza o processo de busca (scraping
 A aplicação foi containerizada usando Docker e orquestrada com Docker Compose, garantindo um ambiente de desenvolvimento e execução consistente e fácil de gerenciar. Foram selecionadas bibliotecas e ferramentas alinhadas as melhores práticas e ao ecossistema Python moderno, visando melhor experiência de desenvolvimento, maior robustez e facilidade de manutenção futura.
 
 
-**NOTA**: Não havia especificações de testes, mas como finalizei o projeto com algum tempo de folga, implementei testes básicos para os endpoints e adicionei outras melhorias não previstas em especificação, Embora que em um contexto real de dia a dia de desenvolvimento, só faria implementações extras após alinhar previamente com o responsável pela especificação e com o time.
+**NOTA**: Não havia especificações de testes, mas como finalizei o projeto com algum tempo de folga, implementei testes básicos para os endpoints e adicionei outras melhorias não previstas em especificação. Embora que em um contexto real de dia a dia de desenvolvimento, só faria implementações extras após alinhar previamente com o responsável pela especificação e com o time.
 
 
 ## Deploy da Aplicação
